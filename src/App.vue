@@ -5,7 +5,7 @@
       color="primary"
       dark
     >
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon @click="toggleSideMenu"></v-app-bar-nav-icon>
       <v-toolbar-title>マイアドレス帳</v-toolbar-title>
     </v-app-bar>
 
@@ -16,6 +16,7 @@
 </template>
 
 <script>
+import { mapActions } from 'vuex'
 import SideNav from "./components/SideNav"
 
 export default {
@@ -23,8 +24,8 @@ export default {
   components: {
     SideNav
   },
-  data: () => ({
-    //
-  }),
+  methods: {
+    ...mapActions(["toggleSideMenu"])
+  }
 };
 </script>
