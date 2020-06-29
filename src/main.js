@@ -7,23 +7,20 @@ import firebase from 'firebase'
 
 Vue.config.productionTip = false
 
-// Initialize Firebase
+// Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAWFBA7Agqvr6I_LNQTHkW5kCjlU7MF6kA",
-  authDomain: "my-address-pj-2a1d4.firebaseapp.com",
-  databaseURL: "https://my-address-pj-2a1d4.firebaseio.com",
-  projectId: "my-address-pj-2a1d4",
-  storageBucket: "my-address-pj-2a1d4.appspot.com",
-  messagingSenderId: "166186606068",
-  appId: "1:166186606068:web:f5da5e5c7f6510c2f16da1",
-  measurementId: "G-EB6CL0XK9R"
+  apiKey: "AIzaSyCb5snCi-Q_lX_5NXD14AW2Tnc9-KS2VV0",
+  authDomain: "my-address-pj-8f2de.firebaseapp.com",
+  databaseURL: "https://my-address-pj-8f2de.firebaseio.com",
+  projectId: "my-address-pj-8f2de",
+  storageBucket: "my-address-pj-8f2de.appspot.com",
+  messagingSenderId: "467122820371",
+  appId: "1:467122820371:web:f8ca50028ddc45f4d676e6",
+  measurementId: "G-5W84LPCV0D"
 };
-
+// Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 firebase.analytics();
-
-
-
 
 new Vue({
   vuetify,
